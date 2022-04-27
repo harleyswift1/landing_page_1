@@ -1,0 +1,18 @@
+button {
+    border-radius: 7px;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0 14px 56px -11px var(--primary-color);
+    width: 10em;
+    padding: 1em;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+
+button:focus, button:hover {
+    transform: translateY(-0.2rem);
+}

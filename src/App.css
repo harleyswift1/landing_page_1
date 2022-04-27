@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+    --font-primary: Montserrat, sans-serif;
+    --font-secondary: Source Sans Pro, sans-serif;
+
+    --background-color-primary: #fdfdff;
+    --background-color-secondary: #eef3ff;
+    --primary-color: #6C63FF
+
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background-color-primary);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+p, ul, ol, dl, th, td, input, textarea, a {
+    font-family: var(--font-secondary);
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover, button:focus {
+    filter: brightness(0.9);
+}
+
+blue {
+    color: var(--primary-color);
+    font-family: Montserrat, sans-serif;
+}

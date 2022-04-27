@@ -1,0 +1,93 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 760px;
+    background-color: var(--background-color-secondary);
+}
+
+.hero-content {
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-content h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    max-width: 35rem;
+    font-weight: bold;
+}
+
+.hero-image {
+    height: 22rem;
+    width: auto;
+}
+
+.cloud-1 {
+    height: 22rem;
+    width: auto;
+    position: absolute;
+    right: 70%;
+    top: 12%;
+}
+
+.cloud-2 {
+    height: 24rem;
+    width: auto;
+    position: absolute;
+    left: 73%;
+    bottom: 30%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content button {
+        width: 8rem;
+        padding: 0.8rem;
+    }
+
+    .hero-image {
+        height: 16rem;
+        width: auto;
+    }
+
+    .cloud-1 {
+        height: 16rem;
+        width: auto;
+        position: absolute;
+        right: 70%;
+        top: 12%;
+    }
+
+    .cloud-2 {
+        height: 14rem;
+        width: auto;
+        position: absolute;
+        left: 73%;
+        bottom: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .cloud-1 {
+        display: none;
+    }
+
+    .cloud-2 {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+header {
+    width:  100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.header-content img {
+    width: 5rem;
+    height: auto;
+}
+
+.header-content nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    margin-right: 2rem;
+}
+
+.header-content nav a {
+    color: grey;
+    text-decoration: none;
+}
+
+.header-content nav a.selected {
+    color: black;
+    font-weight: bold;
+}
+
