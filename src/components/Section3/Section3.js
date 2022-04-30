@@ -2,7 +2,7 @@ import "./Section3.css";
 import pc_icon from "../../assets/images/pc.png";
 
 export default function Section3() {
-    return (<div className={"section3"}>
+    return (<section className={"section3"}>
         <div className="section3-content">
             <img src={pc_icon} alt=""/>
             <div className="section3-content-right">
@@ -20,5 +20,5 @@ export default function Section3() {
                 <b><blue>And lots more...</blue></b>
             </div>
         </div>
-    </div>)
+    </section>)
 }

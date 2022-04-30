@@ -3,7 +3,7 @@ import pc_icon from "../../assets/images/pc.png";
 import Button from "../Utils/Button/Button";
 
 export default function Section1() {
-    return(<div className={"section1"}>
+    return(<section className={"section1"}>
         <div className="section1-content">
             <div className="section1-content-left">
                 <h1>My <blue>Services</blue></h1>
@@ -12,5 +12,5 @@ export default function Section1() {
             </div>
             <img src={pc_icon} alt=""/>
         </div>
-    </div>)
+    </section>)
 }

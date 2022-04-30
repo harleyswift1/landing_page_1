@@ -1,4 +1,5 @@
 import "./PricingWidget.css";
+import Button from "../../Utils/Button/Button";
 
 export default function PricingWidget(props) {
     const title = props.title;
@@ -6,16 +7,16 @@ export default function PricingWidget(props) {
     const price = props.price;
     const items = props.items;
 
-    return (<div className="pricing-widget">
+    return (<article className="pricing-widget">
         <h1>{title}</h1>
         <blue>{description}</blue>
-        <h2>From <blue>${price}</blue></h2>
+        <h2>From <blue><h1>${price}</h1></blue></h2>
         <div className={"divider"}/>
         <ul>
             {items.map((item, index) => {
                 return <li key={index}><b>{item}</b></li>
             })}
         </ul>
-        <button className="pricing-widget-purchase-content">Customise Order</button>
-    </div>)
+        <Button width={"18rem"} text={"Customize Order"} />
+    </article>)
 }

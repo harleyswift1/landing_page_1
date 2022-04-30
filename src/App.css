@@ -49,15 +49,6 @@ a {
 p, ul, ol, dl, th, td, input, textarea, a, b {
     font-family: var(--font-secondary);
 }
-button {
-    cursor: pointer;
-    border: none;
-    border-radius: 3px;
-}
-
-button:hover, button:focus {
-    filter: brightness(0.9);
-}
 
 blue {
     color: var(--primary-color);

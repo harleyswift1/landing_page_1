@@ -3,7 +3,7 @@ import swift_logo from "../../assets/images/swift-logo.png"
 
 export default function Header() {
     return(
-        <header>
+        <nav>
            <div className="header-content">
                <img src={swift_logo} alt=""/>
                <nav>
@@ -13,6 +13,6 @@ export default function Header() {
                </nav>
                <p />
            </div>
-        </header>
+        </nav>
     )
 }

@@ -4,7 +4,7 @@ export default function Section2Card(props) {
     const icon = props.icon;
     const title = props.title;
     const description = props.description;
-    return(<div className={"section-2-card"}>
+    return(<article className={"section-2-card"}>
         <div className="section-2-card-content">
             <div className="section-2-card-content-header">
                 <img src={icon} alt=""/>
@@ -13,5 +13,5 @@ export default function Section2Card(props) {
             <p>{description}</p>
             <a href="learn"><blue>Learn More</blue></a>
         </div>
-    </div>)
+    </article>)
 }
