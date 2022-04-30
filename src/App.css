@@ -25,7 +25,13 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    padding-bottom: 20rem; /*temporary*/
     background-color: var(--background-color-primary);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -36,7 +42,7 @@ a {
     text-decoration: none;
 }
 
-p, ul, ol, dl, th, td, input, textarea, a {
+p, ul, ol, dl, th, td, input, textarea, a, b {
     font-family: var(--font-secondary);
 }
 button {
