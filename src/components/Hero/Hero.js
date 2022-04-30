@@ -9,7 +9,7 @@ export default function Hero() {
             <img src={hero_image} className={"hero-image"} alt=""/>
             <img src={cloud} className={"cloud-1"} alt=""/>
             <img src={cloud} className={"cloud-2"} alt=""/>
-            <h1>The <blue><b>ultimate</b></blue> website solution for your business</h1>
+            <h1>The <blue>ultimate</blue> website solution for your business</h1>
             <Button text={"Learn More"} />
         </div>
     </div>)

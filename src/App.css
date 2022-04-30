@@ -24,6 +24,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 2.2rem;
+}
+
 body {
     padding-bottom: 20rem; /*temporary*/
     background-color: var(--background-color-primary);
@@ -57,7 +61,7 @@ button:hover, button:focus {
 
 blue {
     color: var(--primary-color);
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-primary)
 }
 
 

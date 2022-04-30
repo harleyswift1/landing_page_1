@@ -17,6 +17,9 @@
     box-shadow: rgba(100, 100, 111, 0.4) 0 7px 29px 0;
 }
 
+.pricing-widget blue {
+}
+
 .divider {
     margin: 1rem 0;
     background-color: lightgrey;
@@ -27,6 +30,7 @@
 .pricing-widget ul {
     text-align: center;
     list-style: none;
+    min-height: 15rem;
 }
 
 .pricing-widget ul li {

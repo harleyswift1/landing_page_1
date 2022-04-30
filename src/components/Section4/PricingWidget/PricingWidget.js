@@ -1,20 +1,20 @@
 import "./PricingWidget.css";
 
-export default function PricingWidget() {
+export default function PricingWidget(props) {
+    const title = props.title;
+    const description = props.description;
+    const price = props.price;
+    const items = props.items;
+
     return (<div className="pricing-widget">
-        <h1>Personal</h1>
-        <b>Perfect if you're wanting a personal website</b>
-        <h2>From <blue>$49.99</blue></h2>
+        <h1>{title}</h1>
+        <blue>{description}</blue>
+        <h2>From <blue>${price}</blue></h2>
         <div className={"divider"}/>
         <ul>
-            <li>Item wewe</li>
-            <li>Item ewwe</li>
-            <li>Item e</li>
-            <li>Item Oewrweewne</li>
-            <li>Item werewrOewrne</li>
-            <li>Item ewOne</li>
-            <li>Item eerne</li>
-            <li>Item Oerewne</li>
+            {items.map((item, index) => {
+                return <li key={index}><b>{item}</b></li>
+            })}
         </ul>
         <button className="pricing-widget-purchase-content">Customise Order</button>
     </div>)
