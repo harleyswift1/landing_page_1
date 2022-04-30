@@ -1,7 +1,7 @@
 .section2 {
     width: 100%;
     display: flex;
-    padding: 4rem 0;
+    padding: 2rem 0;
     flex-direction: column;
     row-gap: 4rem;
     align-items: center;
