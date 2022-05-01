@@ -1,0 +1,39 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.contact-options-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.contact-options-container-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+    min-width: 10rem;
+    min-height: 10rem;
+}
+
+.contact-options-container-item h2 {
+    user-select: text;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-options-container-item img {
+    height: 48px;
+    width: auto;
+}
