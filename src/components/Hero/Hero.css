@@ -36,19 +36,19 @@
     height: 22rem;
     width: auto;
     position: absolute;
-    right: 70%;
-    top: 12%;
+    right: 200px;
+    top: 300px;
 }
 
 .cloud-2 {
-    height: 24rem;
+    height: 22rem;
     width: auto;
     position: absolute;
-    left: 73%;
-    bottom: 30%;
+    left: 200px;
+    top: 150px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
     .hero-content h1 {
         font-size: 2rem;
     }
@@ -64,7 +64,7 @@
     }
 
     .cloud-1 {
-        height: 16rem;
+        height: 18rem;
         width: auto;
         position: absolute;
         right: 70%;
@@ -72,7 +72,7 @@
     }
 
     .cloud-2 {
-        height: 14rem;
+        height: 16rem;
         width: auto;
         position: absolute;
         left: 73%;
@@ -81,7 +81,7 @@
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     .cloud-1 {
         display: none;

@@ -32,5 +32,6 @@
 }
 
 .pricing-widget ul li {
+    letter-spacing: 0.1rem;
     font-size: 1.2rem;
 }
