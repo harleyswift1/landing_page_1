@@ -6,7 +6,8 @@ import Button from "../Utils/Button/Button";
 export default function Hero() {
 
     const handleClick = function() {
-        alert("Clicked");
+        const elmntToView = document.getElementById("section1");
+        elmntToView.scrollIntoView();
     }
     return (<section className={"hero"}>
         <div className="hero-content">
