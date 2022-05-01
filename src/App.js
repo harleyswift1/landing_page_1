@@ -8,6 +8,7 @@ import Section3 from "./components/Section3/Section3";
 import Section4 from "./components/Section4/Section4";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import ContactForm from "./components/ContactForm/ContactForm";
+import PortfolioSection from "./components/PortfolioSection/PortfolioSection";
 
 function Home() {
     return (<div className="App">
@@ -25,6 +26,7 @@ function Portfolio() {
     return (<div className="App">
         <InfoBar/>
         <Header selected={1}/>
+        <PortfolioSection />
     </div>);
 }
 
