@@ -9,10 +9,10 @@ export default function Section2() {
     return (<section className={"section2"}>
         <h1>The <blue>simple</blue> solution</h1>
         <div className="section2-cards">
-            <Section2Card icon={icon1} title={"Responsive"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, temporibus."}/>
-            <Section2Card icon={icon2} title={"Optimised"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, temporibus."}/>
-            <Section2Card icon={icon3} title={"Quality Design"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, temporibus."}/>
-            <Section2Card icon={icon4} title={"Affordable"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, temporibus."}/>
+            <Section2Card icon={icon1} title={"Responsive"} description={"All my websites look amazing no matter what device they're viewed on"}/>
+            <Section2Card icon={icon2} title={"Optimised"} description={"Promising all my clients the fastest speeds on every CTA"}/>
+            <Section2Card icon={icon3} title={"Quality Design"} description={"Professionally made designs inspired by the latest design trends"}/>
+            <Section2Card icon={icon4} title={"Affordable"} description={"No matter your budget, we can make something work"}/>
         </div>
     </section>)
 }
