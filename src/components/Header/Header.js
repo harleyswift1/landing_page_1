@@ -11,7 +11,7 @@ export default function Header(props) {
                     <a href="/portfolio/" className={selected === 1 ? "selected" : null}>Portfolio</a>
                     <a href="/contact/" className={selected === 2 ? "selected" : null}>Contact</a>
                 </nav>
-                <p/>
+                <p />
             </div>
         </nav>)
 }

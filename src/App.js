@@ -9,11 +9,18 @@ import Section4 from "./components/Section4/Section4";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import ContactForm from "./components/ContactForm/ContactForm";
 import PortfolioSection from "./components/PortfolioSection/PortfolioSection";
+import {Fragment} from "react";
+
+function Top(props) {
+    return (<Fragment>
+        <InfoBar/>
+        <Header selected={props.selected}/>
+    </Fragment>)
+}
 
 function Home() {
     return (<div className="App">
-        <InfoBar/>
-        <Header selected={0}/>
+        <Top selected={0}></Top>
         <Hero/>
         <Section1/>
         <Section2/>
@@ -24,18 +31,16 @@ function Home() {
 
 function Portfolio() {
     return (<div className="App">
-        <InfoBar/>
-        <Header selected={1}/>
-        <PortfolioSection />
+        <Top selected={1}></Top>
+        <PortfolioSection/>
     </div>);
 }
 
 
 function Contact() {
     return (<div className="App">
-        <InfoBar/>
-        <Header selected={2}/>
-        <ContactForm />
+        <Top selected={2}></Top>
+        <ContactForm/>
     </div>);
 }
 
@@ -44,12 +49,12 @@ function App() {
     return (<div>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home />}/>
+                    <Route path="/" element={<Home/>}/>
 
-                    <Route path="/portfolio" element={<Portfolio />}/>
+                    <Route path="/portfolio" element={<Portfolio/>}/>
 
 
-                    <Route path="/contact" element={<Contact />}/>
+                    <Route path="/contact" element={<Contact/>}/>
 
                 </Routes>
             </Router>

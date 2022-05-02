@@ -37,3 +37,9 @@
     height: 48px;
     width: auto;
 }
+
+@media only screen and (max-width: 850px) {
+    .contact-options-container {
+        flex-direction: column;
+    }
+}
