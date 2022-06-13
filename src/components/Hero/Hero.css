@@ -19,12 +19,21 @@
     align-items: center;
 }
 
-
 .hero-content h1 {
     text-align: center;
     font-size: 2.6rem;
     max-width: 35rem;
     font-weight: bold;
+}
+
+.hero-content h2 {
+    font-weight: normal;
+}
+
+.hero-scroll-down-icon {
+    height: 32px;
+    width: auto;
+    animation: bounce 2s infinite;
 }
 
 .hero-image {
@@ -38,6 +47,8 @@
     position: absolute;
     right: 200px;
     top: 300px;
+    animation: float 3s infinite;
+    animation-delay: 0.4s;
 }
 
 .cloud-2 {
@@ -46,6 +57,7 @@
     position: absolute;
     left: 200px;
     top: 150px;
+    animation: float 3s infinite;
 }
 
 @media only screen and (max-width: 1400px) {

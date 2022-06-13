@@ -4,7 +4,7 @@
     --font-primary: Montserrat, sans-serif;
     --font-secondary: Source Sans Pro, sans-serif;
 
-    --background-color-primary: #fdfdff;
+    --background-color-primary: white;
     --background-color-secondary: #eef3ff;
     --primary-color: #6C63FF
 
@@ -16,10 +16,6 @@ html {
 
 * {
     box-sizing: border-box;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 body, p, h1, h2, h3, h4, h5, h6 {
@@ -33,7 +29,6 @@ h1 {
 }
 
 body {
-    padding-bottom: 20rem; /*temporary*/
     background-color: var(--background-color-primary);
 }
 
@@ -42,7 +37,7 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
 }
 
@@ -59,4 +54,19 @@ blue {
     font-family: var(--font-primary)
 }
 
+*:visited {
+    text-decoration: none;
+    color: initial;
+}
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-5px);}
+    60% {transform: translateY(-10px);}
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
