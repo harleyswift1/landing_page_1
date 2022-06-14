@@ -1,0 +1,48 @@
+.process-card {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 1px 20px 0;
+    padding: 2rem;
+    max-width: 20rem;
+    transition: 400ms ease-in-out;
+    border-top: 20px solid var(--primary-color);
+    align-self: stretch;
+}
+
+.process-card:focus, .process-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.process-card-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.process-card-content img {
+    height: 2rem;
+    width: auto;
+}
+
+.process-card-content h1 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.process-card-content p {
+    font-weight: bold;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
