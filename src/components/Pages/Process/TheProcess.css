@@ -22,9 +22,8 @@
     text-align: right;
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
 }
-
-
 
 .process-header-text p {
     font-weight: bold;
