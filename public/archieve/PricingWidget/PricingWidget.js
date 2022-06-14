@@ -1,5 +1,5 @@
 import "./PricingWidget.css";
-import Button from "../../../../Utils/Button/Button";
+import Button from "../../../src/components/Utils/Button/Button";
 import {useNavigate} from "react-router";
 
 export default function PricingWidget(props) {

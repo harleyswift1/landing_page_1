@@ -9,7 +9,7 @@ export default function Header(props) {
 
     const [expanded, setExpanded] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
-    const selected = props.selected;
+    let selected = props.selected;
 
     window.addEventListener('resize', function (event) {
         setWidth(window.innerWidth);
@@ -60,6 +60,13 @@ export default function Header(props) {
                     >
                         <p className={selected === 3 ? "selected" : "default-border"}>Contact</p>
                     </NavLink>
+                    <NavLink
+                        exact
+                        to="/questions"
+                    >
+                        <p className={selected === 4 ? "selected" : "default-border"}>Q&A</p>
+
+                    </NavLink>
                 </nav>
             </div>)
         } else {
@@ -99,6 +106,12 @@ export default function Header(props) {
                             to="/contact"
                         >
                             <p className={selected === 3 ? "selected" : null}>Contact</p>
+                        </NavLink>
+                        <NavLink
+                            exact
+                            to="/questions"
+                        >
+                            <p className={selected === 4 ? "selected" : null}>Q&A</p>
                         </NavLink>
                     </nav>
                     <p/>

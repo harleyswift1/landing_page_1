@@ -9,12 +9,11 @@
 }
 
 .section1-content-left {
-    padding-right: 6rem;
     display: flex;
     flex-direction: column;
     row-gap: 1.4rem;
     justify-content: center;
-    width: 40rem;
+    width: 32rem;
     height: auto;
 }
 

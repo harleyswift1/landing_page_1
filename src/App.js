@@ -5,7 +5,6 @@ import InfoBar from "./components/InfoBar/InfoBar";
 import Section2 from "./components/Pages/Home/Section2/Section2";
 import Section1 from "./components/Pages/Home/Section1/Section1";
 import Section3 from "./components/Pages/Home/Section3/Section3";
-import Section4 from "./components/Pages/Home/Section4/Section4";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import TransformationsSection from "./components/Pages/Portfolio/PortfolioSection/PortfolioSection";
 import {Fragment} from "react";
@@ -14,6 +13,8 @@ import Footer from "./components/Footer/Footer";
 import ContactForm from "./components/Pages/Contact/ContactForm";
 import Error404 from "./components/Pages/Error404/Error404";
 import Section1A from "./components/Pages/Home/Section1A/Section1A";
+import Section4 from "./components/Pages/Home/Section4/Section4";
+import QandA from "./components/Pages/Q&A/QandA";
 
 function Top(props) {
     return (<Fragment>
@@ -22,7 +23,7 @@ function Top(props) {
     </Fragment>)
 }
 
-function Home() {
+function HomePage() {
     return (<div className="App">
         <Top selected={0}></Top>
         <Hero/>
@@ -30,12 +31,12 @@ function Home() {
         <Section1A />
         <Section2/>
         <Section3/>
-        <Section4/>
+        <Section4 />
         <Footer/>
     </div>);
 }
 
-function Process() {
+function ProcessPage() {
     return (<div className="App">
         <Top selected={1}></Top>
         <TheProcess/>
@@ -43,7 +44,7 @@ function Process() {
     </div>);
 }
 
-function Transformations() {
+function TransformationsPage() {
     return (<div className="App">
         <Top selected={2}></Top>
         <TransformationsSection/>
@@ -52,10 +53,18 @@ function Transformations() {
 }
 
 
-function Contact() {
+function ContactPage() {
     return (<div className="App">
         <Top selected={3}></Top>
         <ContactForm/>
+        <Footer/>
+    </div>);
+}
+
+function QandAPage() {
+    return (<div className="App">
+        <Top selected={4}></Top>
+        <QandA />
         <Footer/>
     </div>);
 }
@@ -69,15 +78,18 @@ function NotFound() {
 }
 
 
+
 function App() {
 
     return (<div>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/process" element={<Process/>}/>
-                    <Route path="/transformations" element={<Transformations/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/home" element={<HomePage/>}/>
+                    <Route path="/process" element={<ProcessPage/>}/>
+                    <Route path="/transformations" element={<TransformationsPage/>}/>
+                    <Route path="/contact" element={<ContactPage/>}/>
+                    <Route path="/questions" element={<QandAPage/>}/>
                     <Route path="*" element={<NotFound />}/>
                 </Routes>
             </Router>
