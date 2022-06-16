@@ -27,9 +27,9 @@ export default function ContactForm() {
                 </form>
             </div>
             <div className="contact-header-text">
-                <div className={"contact-header-text-email"}><img src={mail_icon} alt="email"/>
+                <div className={"contact-header-text-info"}><img src={mail_icon} alt="email"/>
                     <p>harleyswiftus@icloud.com</p></div>
-                <div className={"contact-header-text-email"}><img src={clock_icon} alt="email"/>
+                <div className={"contact-header-text-info"}><img src={clock_icon} alt="email"/>
                     <p>Mon - Sat, 10am-7pm</p></div>
                 <h1>
                     <blue>Contact Us</blue>

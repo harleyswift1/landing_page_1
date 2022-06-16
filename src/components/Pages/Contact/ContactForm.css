@@ -25,7 +25,7 @@
     row-gap: 1rem;
 }
 
-.contact-header-text-email {
+.contact-header-text-info {
     display: flex;
     column-gap: 1rem;
     align-items: center;
@@ -81,4 +81,10 @@
     caret-color: #829ab1;
     box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
     border-radius: 3px;
+}
+
+@media only screen and (max-width: 850px) {
+    .contact-header {
+        flex-direction: column-reverse;
+    }
 }

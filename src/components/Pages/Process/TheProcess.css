@@ -7,19 +7,20 @@
 
 .process-header {
     padding-top: 2rem;
-    width: 55%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .process-header img {
-    height: 20rem;
+    height: 15rem;
     width: auto;
 }
 
 .process-header-text {
     text-align: right;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -39,7 +40,7 @@
     align-items: center;
     padding: 1rem;
     flex-direction: row;
-    column-gap: 1rem;
+    gap: 1rem;
 }
 
 .arrow-icon {
@@ -47,4 +48,28 @@
     width: auto;
     transform: rotate(90deg);
     margin-bottom: 5rem;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .process-header img {
+        display: none;
+    }
+
+    .process-header-text {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .process-cards {
+        flex-direction: column;
+    }
+    .arrow-icon {
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        margin-bottom: 0;
+    }
 }
