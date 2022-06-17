@@ -12,19 +12,18 @@
     display: flex;
     flex-direction: row;
     column-gap: 5em;
-    width: 57%;
+    width: 60%;
 }
 
 .section4-content img {
-    height: 20rem;
-    width: auto;
+    width: 18rem;
+    height: auto;
 }
 
 .section4-content-text {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    width: 60%;
 }
 
 .section4-content-text p {
@@ -35,4 +34,24 @@
 
 .section4-content-text h1 {
     font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .section4-content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .section4-content img {
+        display: none;
+    }
+
+    .section4-content {
+        text-align: center;
+    }
+
+    .section4-content-text {
+        align-items: center;
+    }
 }

@@ -1,8 +1,14 @@
 import "./Section4.css"
 import Button from "../../../Utils/Button/Button";
 import report_image from "../../../../assets/images/report_image.png";
+import {useNavigate} from "react-router";
 
 export default function Section4() {
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate("/contact");
+    }
     return(<div className="section4">
         <div className="section4-content">
             <img src={report_image} alt=""/>
@@ -13,7 +19,7 @@ export default function Section4() {
                 <p>That's why we also offer a full website writeup/report that will detail every single existing
                     aspect of your website that could be improved. Using common best practices and UI/UX laws, we
                     will backup our information using statistics. This will allow you to improve your website from home!</p>
-                <Button text={"Contact Us"} />
+                <Button text={"Contact Us"} onClick={handleClick}/>
             </div>
         </div>
     </div>)

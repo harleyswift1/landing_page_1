@@ -4,7 +4,7 @@ import pc_icon from "../../../../assets/images/pc.png";
 export default function Section3() {
     return (<section className={"section3"}>
         <div className="section3-content">
-            <div className="section3-content-right">
+            <div className="section3-content-text">
                 <h1>What's included?</h1>
                 <div className="feature-list">
                     <p className="feature-list-item">• 1 year warranty</p>

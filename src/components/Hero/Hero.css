@@ -3,15 +3,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
     min-height: 760px;
     background-color: var(--background-color-secondary);
 }
 
 .hero-content {
     padding: 0 2rem;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -94,12 +91,15 @@
 
 
 @media only screen and (max-width: 800px) {
-
     .cloud-1 {
         display: none;
     }
 
     .cloud-2 {
         display: none;
+    }
+
+    .hero {
+        min-height: 650px;
     }
 }

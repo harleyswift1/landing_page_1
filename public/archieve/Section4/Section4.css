@@ -8,6 +8,7 @@
 }
 
 .section4-content {
+    border: 1px solid red;
     align-items: center;
     display: flex;
     flex-direction: row;

@@ -54,9 +54,8 @@
 
 @media only screen and (max-width: 720px) {
     .section1a-content {
-        width: 80%;
+        width: 100%;
     }
-
 
     .section1a-content-cell h1 {
         overflow: hidden;
