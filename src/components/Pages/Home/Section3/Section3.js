@@ -9,15 +9,16 @@ export default function Section3() {
                 <div className="feature-list">
                     <p className="feature-list-item">• 1 year warranty</p>
                     <p className="feature-list-item">• First year hosting FREE</p>
+                    <p className="feature-list-item">• Design breakdown report</p>
                     <div className="feature-list-break"></div>
                     <p className="feature-list-item">• Technical support</p>
                     <p className="feature-list-item">• Site maintenance</p>
+                    <p className="feature-list-item">• Free design & UX advice</p>
                     <div className="feature-list-break"></div>
                     <p className="feature-list-item">• Downloadable site files</p>
                     <p className="feature-list-item">• DDoS protection</p>
+                    <p className="feature-list-item">• Lots more...</p>
                     <div className="feature-list-break"></div>
-                    <p className="feature-list-item">• Free design & UX advice</p>
-                    <p className="feature-list-item">• Design breakdown report</p>
                 </div>
                 <b>
                     <blue>And lots more...</blue>

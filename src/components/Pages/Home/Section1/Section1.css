@@ -1,11 +1,17 @@
 .section1 {
-    padding: 2rem 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0;
 }
 
 .section1-content {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    width: 60%;
 }
 
 .section1-content-left {
@@ -24,13 +30,13 @@
 }
 
 .section1-content img {
-    width: 36rem;
+    width: 25rem;
     height: auto;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
     .section1-content img {
-        width: 28rem;
+        width: 20rem;
         height: auto;
     }
 }

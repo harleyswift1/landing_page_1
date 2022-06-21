@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .section1a-content {
@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     width: 60%;
+    max-width: 70rem;
 }
 
 .section1a-content-cell {

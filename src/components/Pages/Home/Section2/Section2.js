@@ -12,29 +12,33 @@ import {useState} from "react";
 
 function OneRow() {
     return (<section className={"section2"}>
-        <h1>The <blue>simple</blue> solution</h1>
-        <div className="section2-cards">
-            <Section2Card icon={icon1} title={"Responsive"} description={"All our websites look amazing no matter what device they're viewed on"}/>
-            <Section2Card icon={icon2} title={"Optimised"} description={"Promising all our clients the fastest speeds on every click-to-action"}/>
-            <Section2Card icon={icon3} title={"Quality Design"} description={"Professionally made designs inspired by the latest design trends"}/>
-            <Section2Card icon={icon4} title={"Affordable"} description={"No matter your budget, we can make something work for you"}/>
+        <div className="section2-content">
+            <h1>The <blue>simple</blue> solution</h1>
+            <div className="section2-cards">
+                <Section2Card icon={icon1} title={"Responsive"} description={"All our websites look amazing no matter what device they're viewed on"}/>
+                <Section2Card icon={icon2} title={"Optimised"} description={"Promising all our clients the fastest speeds on every click-to-action"}/>
+                <Section2Card icon={icon3} title={"Quality Design"} description={"Professionally made designs inspired by the latest design trends"}/>
+                <Section2Card icon={icon4} title={"Affordable"} description={"No matter your budget, we can make something work for you"}/>
+            </div>
         </div>
     </section>);
 }
 
 function TwoRows() {
     return (<section className={"section2"}>
-        <h1>The <blue>simple</blue> solution</h1>
-        <div className="section2-cards">
-            <Section2Card icon={icon1} title={"Responsive"} description={"All our websites look amazing no matter what device they're viewed on"}/>
-            <Section2Card icon={icon2} title={"Optimised"} description={"Promising all our clients the fastest speeds on every click-to-action"}/>
-            <Section2Card icon={icon3} title={"Quality Design"} description={"Professionally made designs inspired by the latest design trends"}/>
-            <Section2Card icon={icon4} title={"Affordable"} description={"No matter your budget, we can make something work for you"}/>
+        <div className="section2-content">
+            <h1>The <blue>simple</blue> solution</h1>
+            <div className="section2-cards">
+                <Section2Card icon={icon1} title={"Responsive"} description={"All our websites look amazing no matter what device they're viewed on"}/>
+                <Section2Card icon={icon2} title={"Optimised"} description={"Promising all our clients the fastest speeds on every click-to-action"}/>
+                <Section2Card icon={icon3} title={"Quality Design"} description={"Professionally made designs inspired by the latest design trends"}/>
+                <Section2Card icon={icon4} title={"Affordable"} description={"No matter your budget, we can make something work for you"}/>
 
-            <Section2Card icon={icon5} title={"Trending"} description={"We are constantly researching the newest design trends"}/>
-            <Section2Card icon={icon6} title={"Bespoke"} description={"Your business, your website - we can make them match"}/>
-            <Section2Card icon={icon7} title={"Functional"} description={"Multifunctional websites allow for better customer interaction"}/>
-            <Section2Card icon={icon8} title={"Easy Process"} description={"An easy process that includes no hidden costs or agreements"}/>
+                <Section2Card icon={icon5} title={"Trending"} description={"We are constantly researching the newest design trends"}/>
+                <Section2Card icon={icon6} title={"Bespoke"} description={"Your business, your website - we can make them match"}/>
+                <Section2Card icon={icon7} title={"Functional"} description={"Multifunctional websites allow for better customer interaction"}/>
+                <Section2Card icon={icon8} title={"Easy Process"} description={"An easy process that includes no hidden costs or agreements"}/>
+            </div>
         </div>
     </section>);
 }
@@ -48,8 +52,8 @@ export default function Section2() {
     });
 
     if (width <= 800) {
-        return(<OneRow />)
+        return (<OneRow/>)
     } else {
-        return(<TwoRows />)
+        return (<TwoRows/>)
     }
 }

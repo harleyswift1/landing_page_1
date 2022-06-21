@@ -6,14 +6,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
     padding: 1.2rem;
     transition: 400ms ease-in-out;
-    border-width: 6px;
-    border-left-style: solid;
-    border-image:
-            linear-gradient(
-                    to bottom,
-                    #5146ff,
-                    #736bff
-            ) 1 100%;
+    border-left: 6px solid var(--primary-color)
 }
 
 .section-2-card:focus, .section-2-card:hover {

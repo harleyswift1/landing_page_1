@@ -1,20 +1,26 @@
 .section3 {
-    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0;
 }
 
 .section3-content {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    width: 60%;
 }
 
 .section3-content-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 2rem;
-    width: 33rem;
+    row-gap: 1rem;
     height: auto;
+    padding: 0 2rem;
+    max-width: 40rem;
 }
 
 .section3-content-text h1 {
@@ -31,7 +37,6 @@
     flex-direction: row;
     flex-flow: wrap;
     row-gap: 0.6rem;
-    column-gap: 2rem;
 }
 
 
@@ -42,7 +47,7 @@
 
 .feature-list-item {
     color: #6c6c6c;
-    width: 15rem;
+    width: 12rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -51,12 +56,8 @@
 
     .section3-content img {
         flex-basis: 50%;
-        width: 15rem;
-        height: auto;
-    }
-
-    .section3-content-text {
-        width: 20rem;
+        height: 15rem;
+        width: auto;
     }
 
     .feature-list {

@@ -14,7 +14,6 @@ import ContactForm from "./components/Pages/Contact/ContactForm";
 import Error404 from "./components/Pages/Error404/Error404";
 import Section1A from "./components/Pages/Home/Section1A/Section1A";
 import Section4 from "./components/Pages/Home/Section4/Section4";
-import QandA from "./components/Pages/Q&A/QandA";
 
 function Top(props) {
     return (<Fragment>
@@ -61,14 +60,6 @@ function ContactPage() {
     </div>);
 }
 
-function QandAPage() {
-    return (<div className="App">
-        <Top selected={4}></Top>
-        <QandA />
-        <Footer/>
-    </div>);
-}
-
 function NotFound() {
     return (<div className="App">
         <Top />
@@ -89,7 +80,6 @@ function App() {
                     <Route path="/process" element={<ProcessPage/>}/>
                     <Route path="/transformations" element={<TransformationsPage/>}/>
                     <Route path="/contact" element={<ContactPage/>}/>
-                    <Route path="/questions" element={<QandAPage/>}/>
                     <Route path="*" element={<NotFound />}/>
                 </Routes>
             </Router>

@@ -1,21 +1,27 @@
 .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.section2-content {
     width: 100%;
     display: flex;
-    padding: 2rem 0;
-    flex-direction: column;
-    row-gap: 4rem;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .section2-cards {
-    width: 70%;
+    padding-top: 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 4rem;
+    max-width: 70rem;
 }
 
 
